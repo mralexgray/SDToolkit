@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
-		94ADA842101D3185008CC640 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ADA840101D3185008CC640 /* AddressBook.framework */; };
-		94ADA843101D3185008CC640 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ADA841101D3185008CC640 /* ExceptionHandling.framework */; };
 		94ADC08910237C83008CC640 /* SDNextRunloopProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 94ADC08710237C83008CC640 /* SDNextRunloopProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94ADC08A10237C83008CC640 /* SDNextRunloopProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ADC08810237C83008CC640 /* SDNextRunloopProxy.m */; };
-		94BF877E1019654E002418F1 /* ExceptionWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BF87771019654E002418F1 /* ExceptionWindow.xib */; };
-		94BF877F1019654E002418F1 /* FeedbackWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BF87781019654E002418F1 /* FeedbackWindow.xib */; };
 		94BF87801019654E002418F1 /* InstructionsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BF87791019654E002418F1 /* InstructionsWindow.xib */; };
 		94BF87821019654E002418F1 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94BF877B1019654E002418F1 /* PreferencesWindow.xib */; };
 		94BF87C31019656C002418F1 /* NSApplication+AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87881019656C002418F1 /* NSApplication+AppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,10 +31,6 @@
 		94BF87D51019656C002418F1 /* SDCommonAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF879A1019656C002418F1 /* SDCommonAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF87D61019656C002418F1 /* SDCommonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF879B1019656C002418F1 /* SDCommonAppDelegate.m */; };
 		94BF87D71019656C002418F1 /* SDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF879C1019656C002418F1 /* SDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94BF87D81019656C002418F1 /* SDExceptionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF879D1019656C002418F1 /* SDExceptionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94BF87D91019656C002418F1 /* SDExceptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF879E1019656C002418F1 /* SDExceptionController.m */; };
-		94BF87DA1019656C002418F1 /* SDFeedbackController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF879F1019656C002418F1 /* SDFeedbackController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94BF87DB1019656C002418F1 /* SDFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87A01019656C002418F1 /* SDFeedbackController.m */; };
 		94BF87DC1019656C002418F1 /* SDFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87A11019656C002418F1 /* SDFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF87DD1019656C002418F1 /* SDFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87A21019656C002418F1 /* SDFoundation.m */; };
 		94BF87DE1019656C002418F1 /* SDToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87A31019656C002418F1 /* SDToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,8 +46,6 @@
 		94BF87E81019656C002418F1 /* SDIsNotEmptyValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87AD1019656C002418F1 /* SDIsNotEmptyValueTransformer.m */; };
 		94BF87ED1019656C002418F1 /* SDOpenAtLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87B21019656C002418F1 /* SDOpenAtLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF87EE1019656C002418F1 /* SDOpenAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87B31019656C002418F1 /* SDOpenAtLoginController.m */; };
-		94BF87EF1019656C002418F1 /* SDOpenFeedbackBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87B41019656C002418F1 /* SDOpenFeedbackBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94BF87F01019656C002418F1 /* SDOpenFeedbackBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87B51019656C002418F1 /* SDOpenFeedbackBridge.m */; };
 		94BF87F11019656C002418F1 /* SDPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87B61019656C002418F1 /* SDPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF87F21019656C002418F1 /* SDPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF87B71019656C002418F1 /* SDPreferencesController.m */; };
 		94BF87F31019656C002418F1 /* SDRoundedInstructionsImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87B81019656C002418F1 /* SDRoundedInstructionsImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,7 +53,6 @@
 		94BF87F51019656C002418F1 /* SDSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF87BA1019656C002418F1 /* SDSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF888410196B14002418F1 /* SDWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BF888210196B14002418F1 /* SDWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94BF888510196B14002418F1 /* SDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BF888310196B14002418F1 /* SDWindowController.m */; };
-		94BF8C5F10197CF3002418F1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BF8C5E10197CF3002418F1 /* Sparkle.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,12 +62,8 @@
 		32DBCF5E0370ADEE00C91783 /* SDToolkit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDToolkit_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* SDToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94ADA840101D3185008CC640 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
-		94ADA841101D3185008CC640 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = /System/Library/Frameworks/ExceptionHandling.framework; sourceTree = "<absolute>"; };
 		94ADC08710237C83008CC640 /* SDNextRunloopProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDNextRunloopProxy.h; path = Source/SDNextRunloopProxy.h; sourceTree = "<group>"; };
 		94ADC08810237C83008CC640 /* SDNextRunloopProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDNextRunloopProxy.m; path = Source/SDNextRunloopProxy.m; sourceTree = "<group>"; };
-		94BF87771019654E002418F1 /* ExceptionWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExceptionWindow.xib; path = XIBs/ExceptionWindow.xib; sourceTree = "<group>"; };
-		94BF87781019654E002418F1 /* FeedbackWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FeedbackWindow.xib; path = XIBs/FeedbackWindow.xib; sourceTree = "<group>"; };
 		94BF87791019654E002418F1 /* InstructionsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = InstructionsWindow.xib; path = XIBs/InstructionsWindow.xib; sourceTree = "<group>"; };
 		94BF877B1019654E002418F1 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PreferencesWindow.xib; path = XIBs/PreferencesWindow.xib; sourceTree = "<group>"; };
 		94BF87881019656C002418F1 /* NSApplication+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSApplication+AppInfo.h"; path = "Source/NSApplication+AppInfo.h"; sourceTree = "<group>"; };
@@ -100,10 +85,6 @@
 		94BF879A1019656C002418F1 /* SDCommonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDCommonAppDelegate.h; path = Source/SDCommonAppDelegate.h; sourceTree = "<group>"; };
 		94BF879B1019656C002418F1 /* SDCommonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDCommonAppDelegate.m; path = Source/SDCommonAppDelegate.m; sourceTree = "<group>"; };
 		94BF879C1019656C002418F1 /* SDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDDefines.h; path = Source/SDDefines.h; sourceTree = "<group>"; };
-		94BF879D1019656C002418F1 /* SDExceptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDExceptionController.h; path = Source/SDExceptionController.h; sourceTree = "<group>"; };
-		94BF879E1019656C002418F1 /* SDExceptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDExceptionController.m; path = Source/SDExceptionController.m; sourceTree = "<group>"; };
-		94BF879F1019656C002418F1 /* SDFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDFeedbackController.h; path = Source/SDFeedbackController.h; sourceTree = "<group>"; };
-		94BF87A01019656C002418F1 /* SDFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDFeedbackController.m; path = Source/SDFeedbackController.m; sourceTree = "<group>"; };
 		94BF87A11019656C002418F1 /* SDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDFoundation.h; path = Source/SDFoundation.h; sourceTree = "<group>"; };
 		94BF87A21019656C002418F1 /* SDFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDFoundation.m; path = Source/SDFoundation.m; sourceTree = "<group>"; };
 		94BF87A31019656C002418F1 /* SDToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDToolkit.h; path = Source/SDToolkit.h; sourceTree = "<group>"; };
@@ -119,8 +100,6 @@
 		94BF87AD1019656C002418F1 /* SDIsNotEmptyValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDIsNotEmptyValueTransformer.m; path = Source/SDIsNotEmptyValueTransformer.m; sourceTree = "<group>"; };
 		94BF87B21019656C002418F1 /* SDOpenAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDOpenAtLoginController.h; path = Source/SDOpenAtLoginController.h; sourceTree = "<group>"; };
 		94BF87B31019656C002418F1 /* SDOpenAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDOpenAtLoginController.m; path = Source/SDOpenAtLoginController.m; sourceTree = "<group>"; };
-		94BF87B41019656C002418F1 /* SDOpenFeedbackBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDOpenFeedbackBridge.h; path = Source/SDOpenFeedbackBridge.h; sourceTree = "<group>"; };
-		94BF87B51019656C002418F1 /* SDOpenFeedbackBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDOpenFeedbackBridge.m; path = Source/SDOpenFeedbackBridge.m; sourceTree = "<group>"; };
 		94BF87B61019656C002418F1 /* SDPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDPreferencesController.h; path = Source/SDPreferencesController.h; sourceTree = "<group>"; };
 		94BF87B71019656C002418F1 /* SDPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDPreferencesController.m; path = Source/SDPreferencesController.m; sourceTree = "<group>"; };
 		94BF87B81019656C002418F1 /* SDRoundedInstructionsImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDRoundedInstructionsImageView.h; path = Source/SDRoundedInstructionsImageView.h; sourceTree = "<group>"; };
@@ -128,7 +107,6 @@
 		94BF87BA1019656C002418F1 /* SDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDSingleton.h; path = Source/SDSingleton.h; sourceTree = "<group>"; };
 		94BF888210196B14002418F1 /* SDWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWindowController.h; path = Source/SDWindowController.h; sourceTree = "<group>"; };
 		94BF888310196B14002418F1 /* SDWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWindowController.m; path = Source/SDWindowController.m; sourceTree = "<group>"; };
-		94BF8C5E10197CF3002418F1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -138,9 +116,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
-				94BF8C5F10197CF3002418F1 /* Sparkle.framework in Frameworks */,
-				94ADA842101D3185008CC640 /* AddressBook.framework in Frameworks */,
-				94ADA843101D3185008CC640 /* ExceptionHandling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +174,6 @@
 				94BF884A101967BD002418F1 /* Value Transformers */,
 				94BF880910196774002418F1 /* Instruction Window */,
 				94BF8808101966F4002418F1 /* Common Views */,
-				94BF88041019663E002418F1 /* OpenFeedback Bridge */,
-				94BF880310196625002418F1 /* Feedback */,
-				94BF880210196609002418F1 /* Exception Handling */,
 				94BF8801101965F1002418F1 /* Preferences */,
 				94BF87FF101965A9002418F1 /* Open at Login */,
 			);
@@ -211,9 +183,6 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94ADA840101D3185008CC640 /* AddressBook.framework */,
-				94ADA841101D3185008CC640 /* ExceptionHandling.framework */,
-				94BF8C5E10197CF3002418F1 /* Sparkle.framework */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -240,8 +209,6 @@
 		94BF878410196554002418F1 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				94BF87771019654E002418F1 /* ExceptionWindow.xib */,
-				94BF87781019654E002418F1 /* FeedbackWindow.xib */,
 				94BF87791019654E002418F1 /* InstructionsWindow.xib */,
 				94BF877B1019654E002418F1 /* PreferencesWindow.xib */,
 			);
@@ -291,33 +258,6 @@
 				94BF87B71019656C002418F1 /* SDPreferencesController.m */,
 			);
 			name = Preferences;
-			sourceTree = "<group>";
-		};
-		94BF880210196609002418F1 /* Exception Handling */ = {
-			isa = PBXGroup;
-			children = (
-				94BF879D1019656C002418F1 /* SDExceptionController.h */,
-				94BF879E1019656C002418F1 /* SDExceptionController.m */,
-			);
-			name = "Exception Handling";
-			sourceTree = "<group>";
-		};
-		94BF880310196625002418F1 /* Feedback */ = {
-			isa = PBXGroup;
-			children = (
-				94BF879F1019656C002418F1 /* SDFeedbackController.h */,
-				94BF87A01019656C002418F1 /* SDFeedbackController.m */,
-			);
-			name = Feedback;
-			sourceTree = "<group>";
-		};
-		94BF88041019663E002418F1 /* OpenFeedback Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				94BF87B41019656C002418F1 /* SDOpenFeedbackBridge.h */,
-				94BF87B51019656C002418F1 /* SDOpenFeedbackBridge.m */,
-			);
-			name = "OpenFeedback Bridge";
 			sourceTree = "<group>";
 		};
 		94BF8808101966F4002418F1 /* Common Views */ = {
@@ -370,8 +310,6 @@
 				94BF87D11019656C002418F1 /* NSWorkspace+SystemInfo.h in Headers */,
 				94BF87D51019656C002418F1 /* SDCommonAppDelegate.h in Headers */,
 				94BF87D71019656C002418F1 /* SDDefines.h in Headers */,
-				94BF87D81019656C002418F1 /* SDExceptionController.h in Headers */,
-				94BF87DA1019656C002418F1 /* SDFeedbackController.h in Headers */,
 				94BF87DC1019656C002418F1 /* SDFoundation.h in Headers */,
 				94BF87DE1019656C002418F1 /* SDToolkit.h in Headers */,
 				94BF87DF1019656C002418F1 /* SDInsetDividerView.h in Headers */,
@@ -380,7 +318,6 @@
 				94BF87E51019656C002418F1 /* SDInstructionsWindowController.h in Headers */,
 				94BF87E71019656C002418F1 /* SDIsNotEmptyValueTransformer.h in Headers */,
 				94BF87ED1019656C002418F1 /* SDOpenAtLoginController.h in Headers */,
-				94BF87EF1019656C002418F1 /* SDOpenFeedbackBridge.h in Headers */,
 				94BF87F11019656C002418F1 /* SDPreferencesController.h in Headers */,
 				94BF87F31019656C002418F1 /* SDRoundedInstructionsImageView.h in Headers */,
 				94BF87F51019656C002418F1 /* SDSingleton.h in Headers */,
@@ -441,8 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94BF877E1019654E002418F1 /* ExceptionWindow.xib in Resources */,
-				94BF877F1019654E002418F1 /* FeedbackWindow.xib in Resources */,
 				94BF87801019654E002418F1 /* InstructionsWindow.xib in Resources */,
 				94BF87821019654E002418F1 /* PreferencesWindow.xib in Resources */,
 			);
@@ -464,8 +399,6 @@
 				94BF87D01019656C002418F1 /* NSWindow+Geometry.m in Sources */,
 				94BF87D21019656C002418F1 /* NSWorkspace+SystemInfo.m in Sources */,
 				94BF87D61019656C002418F1 /* SDCommonAppDelegate.m in Sources */,
-				94BF87D91019656C002418F1 /* SDExceptionController.m in Sources */,
-				94BF87DB1019656C002418F1 /* SDFeedbackController.m in Sources */,
 				94BF87DD1019656C002418F1 /* SDFoundation.m in Sources */,
 				94BF87E01019656C002418F1 /* SDInsetDividerView.m in Sources */,
 				94BF87E21019656C002418F1 /* SDInsetTextField.m in Sources */,
@@ -473,7 +406,6 @@
 				94BF87E61019656C002418F1 /* SDInstructionsWindowController.m in Sources */,
 				94BF87E81019656C002418F1 /* SDIsNotEmptyValueTransformer.m in Sources */,
 				94BF87EE1019656C002418F1 /* SDOpenAtLoginController.m in Sources */,
-				94BF87F01019656C002418F1 /* SDOpenFeedbackBridge.m in Sources */,
 				94BF87F21019656C002418F1 /* SDPreferencesController.m in Sources */,
 				94BF87F41019656C002418F1 /* SDRoundedInstructionsImageView.m in Sources */,
 				94BF888510196B14002418F1 /* SDWindowController.m in Sources */,
@@ -491,10 +423,7 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -504,10 +433,7 @@
 				GCC_PREFIX_HEADER = SDToolkit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Resources\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = SDToolkit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -520,20 +446,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SDToolkit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Resources\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = SDToolkit;
 				WRAPPER_EXTENSION = framework;
 			};

@@ -8,18 +8,12 @@
 
 #import "SDCommonAppDelegate.h"
 
-#import <Sparkle/Sparkle.h>
-#import "SDFeedbackController.h"
-#import "SDExceptionController.h"
 #import "SDOpenAtLoginController.h"
 
 @implementation SDCommonAppDelegate
 
 - (id) init {
 	if (self = [super init]) {
-		updater = [[SUUpdater sharedUpdater] retain];
-		
-		exceptionController = [[SDExceptionController alloc] init];
 	}
 	return self;
 }
@@ -82,48 +76,6 @@
 
 - (NSArray*) instructionImageNames {
 	return nil;
-}
-
-// MARK: -
-// MARK: Feedback
-
-- (SDFeedbackController*) feedbackController {
-	if (feedbackController == nil)
-		feedbackController = [[SDFeedbackController alloc] init];
-	
-	return feedbackController;
-}
-
-- (IBAction) showFeedbackPanelForBug:(id)sender {
-	[[self feedbackController] presentFeedbackPanelForBug:sender];
-}
-
-- (IBAction) showFeedbackPanelForFeature:(id)sender {
-	[[self feedbackController] presentFeedbackPanelForFeature:sender];
-}
-
-- (IBAction) showFeedbackPanelForSupport:(id)sender {
-	[[self feedbackController] presentFeedbackPanelForSupport:sender];
-}
-
-// MARK: -
-// MARK: Sparkle
-
-- (IBAction) checkForUpdates:(id)sender {
-	[updater checkForUpdates:sender];
-}
-
-- (IBAction) visitWebsite:(id)sender {
-	NSURL *productURL = [NSURL URLWithString:@"http://www.thoughtfultree.com/"];
-	[[NSWorkspace sharedWorkspace] openURL:productURL];
-}
-
-- (IBAction) visitWebsiteStore:(id)sender {
-	NSURL *emailURL = [NSURL URLWithString:@"http://www.thoughtfultree.com/store"];
-	[[NSWorkspace sharedWorkspace] openURL:emailURL];
-}
-
-- (void) appRegisteredSuccessfully {
 }
 
 // MARK: -
