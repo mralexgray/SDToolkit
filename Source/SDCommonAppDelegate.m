@@ -1,0 +1,150 @@
+//
+//  SDCommonAppDelegate.m
+//  DeskLabels
+//
+//  Created by Steven Degutis on 7/4/09.
+//  Copyright 2009 Thoughtful Tree Software. All rights reserved.
+//
+
+#import "SDCommonAppDelegate.h"
+
+#import <Sparkle/Sparkle.h>
+#import "SDFeedbackController.h"
+#import "SDExceptionController.h"
+#import "SDOpenAtLoginController.h"
+
+@implementation SDCommonAppDelegate
+
+- (id) init {
+	if (self = [super init]) {
+		updater = [[SUUpdater sharedUpdater] retain];
+		
+		exceptionController = [[SDExceptionController alloc] init];
+	}
+	return self;
+}
+
+// MARK: -
+// MARK: About Panel
+
+- (IBAction) showAboutPanel:(id)sender {
+	[NSApp orderFrontStandardAboutPanel:sender];
+}
+
+// MARK: -
+// MARK: Opens At Login
+
+- (SDOpenAtLoginController*) openAtLoginController {
+	if (openAtLoginController == nil)
+		openAtLoginController = [[SDOpenAtLoginController alloc] init];
+	
+	return openAtLoginController;
+}
+
+- (void) setOpensAtLogin:(BOOL)opens {
+	[self openAtLoginController].opensAtLogin = opens;
+}
+
+- (IBAction) toggleOpensAtLogin:(id)sender {
+	NSInteger changingToState = ![sender state];
+	[self openAtLoginController].opensAtLogin = changingToState;
+}
+
+- (BOOL) validateMenuItem:(NSMenuItem *)menuItem {
+	if ([menuItem action] == @selector(toggleOpensAtLogin:)) {
+		NSInteger state = ([self openAtLoginController].opensAtLogin ? NSOnState : NSOffState);
+		[menuItem setState:state];
+	}
+	return YES;
+}
+
+// MARK: -
+// MARK: Instructions Window
+
+- (IBAction) showInstructionsWindow:(id)sender {
+	if ([[self instructionImageNames] count] == 0) {
+		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+		[alert setMessageText:@"Help"];
+		[alert setInformativeText:NSSTRINGF(@"Help isn't available for %@", [NSApp appName])];
+		[alert runModal];
+		return;
+	}
+	
+	if (instructionWindowController == nil) {
+		instructionWindowController = [[SDInstructionsWindowController alloc] init];
+		instructionWindowController.delegate = self;
+	}
+	
+	[NSApp activateIgnoringOtherApps:YES];
+	[[instructionWindowController window] center];
+	[instructionWindowController showWindow:self];
+}
+
+- (NSArray*) instructionImageNames {
+	return nil;
+}
+
+// MARK: -
+// MARK: Feedback
+
+- (SDFeedbackController*) feedbackController {
+	if (feedbackController == nil)
+		feedbackController = [[SDFeedbackController alloc] init];
+	
+	return feedbackController;
+}
+
+- (IBAction) showFeedbackPanelForBug:(id)sender {
+	[[self feedbackController] presentFeedbackPanelForBug:sender];
+}
+
+- (IBAction) showFeedbackPanelForFeature:(id)sender {
+	[[self feedbackController] presentFeedbackPanelForFeature:sender];
+}
+
+- (IBAction) showFeedbackPanelForSupport:(id)sender {
+	[[self feedbackController] presentFeedbackPanelForSupport:sender];
+}
+
+// MARK: -
+// MARK: Sparkle
+
+- (IBAction) checkForUpdates:(id)sender {
+	[updater checkForUpdates:sender];
+}
+
+- (IBAction) visitWebsite:(id)sender {
+	NSURL *productURL = [NSURL URLWithString:@"http://www.thoughtfultree.com/"];
+	[[NSWorkspace sharedWorkspace] openURL:productURL];
+}
+
+- (IBAction) visitWebsiteStore:(id)sender {
+	NSURL *emailURL = [NSURL URLWithString:@"http://www.thoughtfultree.com/store"];
+	[[NSWorkspace sharedWorkspace] openURL:emailURL];
+}
+
+- (void) appRegisteredSuccessfully {
+}
+
+// MARK: -
+// MARK: Preferences Panel
+
+- (IBAction) showPreferencesPanel:(id)sender {
+	if (preferencesController == nil) {
+		preferencesController = [[SDPreferencesController alloc] init];
+		preferencesController.delegate = self;
+	}
+	
+	[NSApp activateIgnoringOtherApps:YES];
+	[preferencesController showWindow:self];
+}
+
+- (BOOL) showsPreferencesToolbar {
+	return NO;
+}
+
+- (NSArray*) preferencePaneControllerClasses {
+	return nil;
+}
+
+@end
